@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS' // This name must match what's configured in Jenkins -> Global Tool Configuration
+        nodejs 'NODEJS' // This name must match what's configured in Jenkins -> Global Tool Configuration
     }
 
     environment {
-        REPO_URL = 'https://github.com/Gokhul2003/Course_Listing'
+        REPO_URL = 'https://github.com/Gokhul2003/Course_Listing.git'
         BUILD_DIR = 'build'
         PORT = '5000'
     }
